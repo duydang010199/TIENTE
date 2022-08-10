@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chuyển đổi tiền tệ</title>
+    <script src="tiente.js"></script>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th><label for="Money">Amount</label></th>
+          <th>From Currency</th>
+          <th>To Currency</th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><input type="number" id="Money" /></td>
+          <td>
+            <select id="From">
+              <option value="VND">VND</option>
+              <option value="USD">USD</option>
+            </select>
+          </td>
+          <td>
+            <select id="To">
+              <option value="USD">USD</option>
+              <option value="VND">VND</option>
+            </select>
+          </td>
+          <td>
+            <button type="button" onclick="ChangeMoney()">Convert</button>
+          </td>
+        </tr>
+      </table>
+      <br />
+      <p id="Result"></p>
+    </form>
+  </body>
+</html>
